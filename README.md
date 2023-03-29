@@ -19,8 +19,13 @@ Vaatimukset:
 
 Puutteet / kehityskohteet:
 - Mahdollinen virtuaaliympäristö tai Docker
-- requests.txt tiedosto
 - Itse koodissa on myös kehityskohteita, mutta osa johtuu verkkopalveluiden (MOL, Monster ja Oikotie) poikkeavista toteutustavoista (tämä vain huomiona, ei selityksenä).
+- Lisäksi Oikotien toiminnot on otettu pois käytöstä siltä osin kun uusia paikkoja haetaan sieltä tietokantaan. Tämä siis toistaiseksi ja johtuu heidän sivustoilla tapahtuneesta muutoksesta, jolloin nykyinen "raapija" ei siellä enää toimikaan.
+
+Uutta:
+- Tehty .py -versio ja lisätty requirements.txt -tiedosto.
+- Suosituksena luoda virtuaalinen Py-ympäristö. Esim. Windowsissa komennolla venv Paikat - tarkemmat ohjeistukset täältä: https://docs.python.org/3/library/venv.html.
+- Lisätty multiprocessing, lokitusta ja yksinkertainen raportointimahdollisuus suorityskyvystä, eli vertailee suorituskykyä normaaliajolla tai multiprocessing-ajolla.
 
 Loppusanat:
 - Projektin tarkoitus oli pyrkiä näyttämään osaamista yllä luetelluista osa-alueista. Aikarajoitteen vuoksi tavoitteena ei ollut täydellinen lopputulos, mutta ei myöskään ratkaisu missä aita on matalin.
