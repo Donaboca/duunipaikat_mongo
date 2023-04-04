@@ -439,7 +439,7 @@ def lataa_chrome_ajuri():
     options = webdriver.ChromeOptions()
     options.add_argument("user-agent=header")
     options.page_load_strategy = "normal"
-    options.headless = True
+    options.add_argument("--headless")
 
     driver = Chrome(options=options)
     return driver
